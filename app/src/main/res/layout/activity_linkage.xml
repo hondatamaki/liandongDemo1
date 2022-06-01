@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.liandongDemo1.linkageActivity">
+
+    <CheckBox
+        android:id="@+id/cb_fengshan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="244dp"
+        android:layout_marginStart="244dp"
+        android:layout_marginTop="163dp" />
+
+    <CheckBox
+        android:id="@+id/cb_guangzhao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cb_fengshan"
+        android:layout_alignStart="@+id/cb_fengshan"
+        android:layout_below="@+id/cb_fengshan"
+        android:layout_marginTop="38dp"
+        android:text="当光照度" />
+
+    <Spinner
+        android:id="@+id/sn_fengshan1"
+        android:layout_width="100dp"
+        android:layout_marginLeft="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cb_guangzhao"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:entries="@array/Sensor"/>
+    <Spinner
+        android:id="@+id/sn_fengshan2"
+        android:layout_width="100dp"
+        android:layout_marginLeft="450dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cb_guangzhao"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:entries="@array/Compare1"/>
+
+    <EditText
+        android:id="@+id/et_fengshan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/sn_fengshan2"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_toEndOf="@+id/sn_fengshan2"
+        android:layout_toRightOf="@+id/sn_fengshan2"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cb_guangzhao"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_toEndOf="@+id/et_fengshan"
+        android:layout_toRightOf="@+id/et_fengshan"
+        android:text="风扇转"
+        android:textColor="#000000" />
+
+    <Spinner
+        android:id="@+id/sn_guangzhao1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sn_fengshan1"
+        android:layout_alignStart="@+id/sn_fengshan1"
+        android:layout_alignTop="@+id/cb_guangzhao"
+        android:layout_marginLeft="50dp"
+        android:entries="@array/Compare2"/>
+
+    <EditText
+        android:id="@+id/et_guangzhao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/sn_guangzhao1"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:layout_toEndOf="@+id/sn_guangzhao1"
+        android:layout_toRightOf="@+id/sn_guangzhao1"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Spinner
+        android:id="@+id/sn_guangzhao2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/et_fengshan"
+        android:layout_alignRight="@+id/et_fengshan"
+        android:layout_alignTop="@+id/et_guangzhao"
+        android:layout_marginEnd="-30dp"
+        android:layout_marginRight="-30dp"
+        android:entries="@array/Devices"/>
+
+    <TextView
+        android:id="@+id/q"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cb_fengshan"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/cb_fengshan"
+        android:layout_marginTop="56dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/w"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/q"
+        android:layout_alignLeft="@+id/sn_guangzhao1"
+        android:layout_alignStart="@+id/sn_guangzhao1"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/q"
+        android:layout_alignStart="@+id/q"
+        android:layout_below="@+id/q"
+        android:layout_marginTop="32dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/w"
+        android:layout_alignStart="@+id/w"
+        android:layout_alignTop="@+id/e"
+        android:text="TextView" />
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Sensor">
+        <item>温度</item>
+        <item>光照</item>
+    </string-array>
+    <string-array name="Compare1">
+        <item>&gt;</item>
+        <item>&lt;</item>
+    </string-array>
+    <string-array name="Compare2">
+        <item>&gt;</item>
+        <item>&lt;</item>
+    </string-array>
+    <string-array name="Devices">
+        <item>报警灯开</item>
+        <item>LED射灯全开</item>
+    </string-array>
+</resources>
